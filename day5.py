@@ -81,7 +81,7 @@ def main():
             L, R = compute_intersection(l, r, a, b)
             if L is not None:
                 if ans is None:
-                    ans = L + o_l
+                    ans = L + o_l - l
                 ans = min(ans, L + o_l - l)
     print(ans)
     
