@@ -76,34 +76,4 @@ while len(priority_queue) > 0:
                 heappush(priority_queue, (new_dist, new_node))
 
 
-# final_row, final_col, final_dir, final_cnt = n - 1, m - 1, "RIGHT", 1
-# final_row, final_col, final_dir, final_cnt = 11, 11, "DOWN", 1
-
-
-# dbg = [['.' for _ in range(m)] for _ in range(n)]
-# print("DEBUGGING")
-# sum_cost = 0
-# while True:
-#     node = AugmentedNode(row=final_row, col=final_col, dir=final_dir, cnt=final_cnt)
-#     if final_cnt != 0:
-#         sum_cost += matrix[final_row][final_col]
-#     print(node, distance[node])
-#     dbg[final_row][final_col] = 'X'
-#     if node not in parent:
-#         break
-#     final_row, final_col, final_dir, final_cnt = parent[node].row, parent[node].col, parent[node].dir, parent[node].cnt
-
-
-# print(sum_cost, distance[AugmentedNode(row=n-1, col=m-1, dir="RIGHT", cnt=1)])
-
-# for row in dbg:
-#     print(''.join(row))
-    
-# print()
-
-
-
-# print(parent[AugmentedNode(row=11, col=11, dir="DOWN", cnt=1)])
-# print(distance[AugmentedNode(row=0, col=1, dir="RIGHT", cnt=1)/
-# print(parent[AugmentedNode(row=0, col=5, dir="UP", cnt=1)])
 input_file.close()
