@@ -21,7 +21,7 @@ readBothListsElementbyElement :: IO ([Int], [Int])
 readBothListsElementbyElement = do
     eof <- hIsEOF stdin
     if eof
-        then return ([], [])  -- When EOF is reached, return two empty lists
+        then return ([], [])
         else do
             input <- getLine
             let numbers = words input
